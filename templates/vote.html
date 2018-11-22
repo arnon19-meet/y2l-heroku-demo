@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head>
+	<title>vote</title>
+</head>
+<body>
+    {% for cat in cats%}
+        <h1>Vote for {{cat.name}} </h1>
+	    <form action="/vote" method="POST">
+		    <input type="submit" value="Submit">
+        </form>
+    {% endfor%}
+</body>
+</html>
